@@ -55,11 +55,23 @@
           <h1 class="text-center">Biblioteca Digital</h1>
         <div style="background-color:coral">
             
-            <ul class="dropdown menu">
-                <li><a href="#" class="fi-book">Clasificacion</a></li>
+            <ul class="dropdown menu" data-dropdown-menu>
+                <img src="App_Themes/Tema1/img/books.png" />
+                <li class="has-submenu">
+                        <a href="#" class="fi-book">Clasificación</a>
+                        <ul class="submenu menu vertical" data-submenu>
+                            <li><a href="#">Historia</a></li>
+                            <li><a href="#">Ciencia</a></li>
+                            <li><a href="#">Geografía</a></li>
+                            <li><a href="#">Programación</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Arte</a></li>
+                            <li><a href="#">Musica</a></li>
+                        </ul>
+                    </li>
                 <li><a href="#" class="fi-telephone">Contacto</a></li>
                 <li><a href="#" class="fi-info">Ayuda</a></li>
-                <li style="margin-left:43%"><input type="search" placeholder="Buscar"/></li>
+                <li style="margin-left:35%"><input type="search" placeholder="Buscar"/></li>
                 <li><button type="button" class="button">Buscar</button></li>  
                
                 <li class="list-inline-item">
@@ -84,7 +96,6 @@
 
         </div>
 
-    </form>
 
     <div class="row medium-auto">
         <div class="column medium-3">
@@ -105,7 +116,7 @@
 									<div class="form-group">
 										<div class="row">
 											<div class="col-sm-6 col-sm-offset-3">
-												<button type="button" class="button">Iniciar Sesión</button>
+												<button type="button" style="margin-left:14%"  class="button">Iniciar Sesión</button>
 											</div>
 										</div>
 									</div>
@@ -115,5 +126,12 @@
 
         </div>
     </div>
+    </form>
+
+   <script src="App_Themes/Tema1/js/vendor/jquery.js"></script>
+   <script src="App_Themes/Tema1/js/vendor/what-input.js"></script>
+   <script src="App_Themes/Tema1/js/vendor/foundation.js"></script>
+   <script src="App_Themes/Tema1/js/app.js"></script>
+
 </body>
 </html>
