@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="inicio.aspx.cs" Inherits="inicio" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="login" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <script src="App_Themes/Tema1/js/app.js"></script>
+   <script src="App_Themes/Tema1/js/app.js"></script>
    <script src="App_Themes/Tema1/js/jquery.min.js"></script>
    <link href="App_Themes/Tema1/css/app.css" rel="stylesheet" />
    <link href="App_Themes/Tema1/css/foundation.css" rel="stylesheet" />
@@ -17,12 +17,12 @@
    <link href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.css" rel="stylesheet"/>
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 
-     <script src="https://use.fontawesome.com/025d1f53df.js"></script>
 
-    <title>Biblioteca</title>
+      <script src="https://use.fontawesome.com/025d1f53df.js"></script>
+
+    <title>Login</title>
 </head>
 <body>
-
     <style>
         body {
             background-image: url(http://localhost:55034/App_Themes/Tema1/img/B65.jpg);
@@ -35,23 +35,24 @@
             font-weight: bold;
             background-color:sandybrown;
             width:400px;
-            margin-left:35%;
-            
-            
-            
+            margin-left:35%;  
         } 
-          .abajo{
-
-              background-color:gray;
-              margin-top:30%;
-              text-align:center;
-
+          h2{
+            color: yellow;
+            font-family: Arial;
+            font-weight: bold;
+            background-color:sandybrown;
+            width:400px;
+            margin-left:18%;
           }
 
+          .boton{
+             margin-left:18%;
+          }
     </style>
-    <form id="form1" runat="server">
 
-        <h1 class="text-center">Biblioteca Digital</h1>
+    <form id="form1" runat="server">
+          <h1 class="text-center">Biblioteca Digital</h1>
         <div style="background-color:coral">
             
             <ul class="dropdown menu">
@@ -83,9 +84,36 @@
 
         </div>
 
-
-        
-         
     </form>
+
+    <div class="row medium-auto">
+        <div class="column medium-3">
+
+        </div>
+        <div class="column medium-6">
+            <br />
+            <h2 class="text-center">Iniciar Sesión</h2>
+            <form>
+				<div class="form-group">
+					<input type="text"  placeholder="Usuario" >
+									</div>
+								
+									<div class="form-group">
+										<input type="password"  placeholder="Contraseña">
+									</div>
+									
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<button type="button" class="button">Iniciar Sesión</button>
+											</div>
+										</div>
+									</div>
+								</form>
+        </div>
+        <div class="column medium-3">
+
+        </div>
+    </div>
 </body>
 </html>

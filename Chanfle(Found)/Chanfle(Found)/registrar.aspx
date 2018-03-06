@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-     <script src="App_Themes/Tema1/js/app.js"></script>
+   <script src="App_Themes/Tema1/js/app.js"></script>
    <script src="App_Themes/Tema1/js/jquery.min.js"></script>
    <link href="App_Themes/Tema1/css/app.css" rel="stylesheet" />
    <link href="App_Themes/Tema1/css/foundation.css" rel="stylesheet" />
@@ -16,6 +16,9 @@
    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation-flex.min.css" rel="stylesheet"/>
    <link href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.css" rel="stylesheet"/>
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+      <script src="https://use.fontawesome.com/025d1f53df.js"></script>
+
     <title>Registrar</title>
 </head>
 <body>
@@ -31,19 +34,24 @@
             font-weight: bold;
             background-color:sandybrown;
             width:400px;
-            margin-left:30%;  
+            margin-left:35%;  
         } 
           h2{
-              color: yellow;
+            color: yellow;
             font-family: Arial;
             font-weight: bold;
             background-color:sandybrown;
             width:400px;
+            margin-left:18%;
+          }
+
+          .boton{
+             margin-left:18%;
           }
     </style>
 
     <form id="form1" runat="server">
-        <h1 class="text-center">Biblioteca Digital</h1>
+          <h1 class="text-center">Biblioteca Digital</h1>
         <div style="background-color:coral">
             
             <ul class="dropdown menu">
@@ -51,9 +59,30 @@
                 <li><a href="#" class="fi-telephone">Contacto</a></li>
                 <li><a href="#" class="fi-info">Ayuda</a></li>
                 <li style="margin-left:43%"><input type="search" placeholder="Buscar"/></li>
-                <li><button type="button" class="button">Buscar</button></li>                               
-            </ul>           
+                <li><button type="button" class="button">Buscar</button></li>  
+               
+                <li class="list-inline-item">
+                <a href="#">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </li>
+
+            </ul>
+            
+
         </div>
+
     </form>
 
     <div class="row medium-auto">
@@ -62,7 +91,7 @@
         </div>
         <div class="column medium-6">
             <br />
-            <h2 class="text-center"> Registro Usuario</h2>
+            <h2 class="text-center"> Inicio de Sesión</h2>
             <form>
 				<div class="form-group">
 					<input type="text"  placeholder="Usuario" >
